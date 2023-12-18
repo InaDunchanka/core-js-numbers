@@ -101,11 +101,7 @@ function getLinearEquationRoot(a, b) {
   } else if (b === 0) {
     x = 0;
   }
-  const d = Math.sqrt(Math.abs(x));
-  if (x === -b) {
-    return -b;
-  }
-  return Math.ceil(d);
+  return x;
 }
 
 /**
