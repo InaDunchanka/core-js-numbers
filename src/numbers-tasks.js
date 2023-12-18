@@ -92,8 +92,20 @@ function getDistanceBetweenPoints(x1, y1, x2, y2) {
  *   x + 8 = 0       => -8
  *   5*x = 0         => 0
  */
-function getLinearEquationRoot(/* a, b */) {
-  throw new Error('Not implemented');
+function getLinearEquationRoot(a, b) {
+  let x;
+  if (a === 1) {
+    x = -b * a;
+  } else if (a > 1) {
+    x = -b / a;
+  } else if (b === 0) {
+    x = 0;
+  }
+  const d = Math.sqrt(Math.abs(x));
+  if (x === -b) {
+    return -b;
+  }
+  return Math.ceil(d);
 }
 
 /**
