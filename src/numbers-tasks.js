@@ -122,6 +122,23 @@ function getLinearEquationRoot(a, b) {
  *   (0,1) (0,1)     => 0
  */
 function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
+  // const chis = x1 * y1 + x2 * y2;
+  // const l = x1 ** 2 + x2 ** 2;
+  // const lSqrt = Math.sqrt(l);
+  // const m = y1 ** 2 + y2 ** 2;
+  // const mSqrt = Math.sqrt(m);
+  // const zna = lSqrt * mSqrt;
+  // const cosVector = Math.cos(chis / zna);
+  // const arc = Math.acos(cosVector);
+  // return arc;
+  // const sco = x1 * y1 * (x2 * y2);
+  // const vecA = x1 * y1;
+  // const vecB = x2 * y2;
+  // const pro = Math.cos(vecA * vecB) * sco;
+  // const sco = x1 * x2 + y1 * y2;
+  // const vecA = Math.sqrt(x1 ** 2 + x2 ** 2);
+  // const vecB = Math.sqrt(y1 ** 2 + y2 ** 2);
+  // const scoCos = Math.cos(sco / )
   throw new Error('Not implemented');
 }
 
@@ -138,8 +155,8 @@ function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
  *     5     => 5
  *     0     => 0
  */
-function getLastDigit(/* value */) {
-  throw new Error('Not implemented');
+function getLastDigit(value) {
+  return value % 10;
 }
 
 /**
