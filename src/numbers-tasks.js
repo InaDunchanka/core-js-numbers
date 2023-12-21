@@ -312,8 +312,12 @@ function getSumToN(/* n */) {
  *   202 => 4  // (2+0+2)
  *   5   => 5  // 5
  */
-function getSumOfDigits(/* num */) {
-  throw new Error('Not implemented');
+function getSumOfDigits(num) {
+  const num1 = num % 10;
+  if (num > 0) {
+    return num1 + getSumOfDigits((num - num1) / 10);
+  }
+  return num1;
 }
 
 /**
@@ -328,6 +332,10 @@ function getSumOfDigits(/* num */) {
  *   15  => false
  */
 function isPowerOfTwo(/* num */) {
+  // let m;
+  // const per = num / m;
+  // if (per ** 2 === num);
+  // return true;
   throw new Error('Not implemented');
 }
 
